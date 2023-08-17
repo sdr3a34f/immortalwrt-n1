@@ -13,6 +13,6 @@ rm -rf feeds/packages/net/mosdns
 rm -rf feeds/packages/net/v2ray-geodata
 
 # Add packages
-svn co https://github.com/xiaorouji/openwrt-passwall2/trunk package/passwall2
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/passwall
 svn co https://github.com/ophub/luci-app-amlogic/trunk package/amlogic
 # svn co https://github.com/sbwml/luci-app-mosdns/trunk package/mosdns
