@@ -12,5 +12,5 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk package/amlogic
 # svn co https://github.com/sbwml/luci-app-mosdns/trunk package/mosdns
 
 # passwall2
-git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/passwall_package
-git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
+# git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/passwall_package
+# git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
