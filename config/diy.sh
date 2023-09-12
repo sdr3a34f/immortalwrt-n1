@@ -6,6 +6,9 @@
 # Firewall
 echo "iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE" >> package/network/config/firewall/files/firewall.user
 
+# geodata
+wget -q -cP files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+wget -q -cP files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
 
 # Add packages
 svn co https://github.com/ophub/luci-app-amlogic/trunk package/amlogic
