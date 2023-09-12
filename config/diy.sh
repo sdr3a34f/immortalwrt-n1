@@ -11,7 +11,12 @@ echo "iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE" >> package/network/c
 svn co https://github.com/ophub/luci-app-amlogic/trunk package/amlogic
 # svn co https://github.com/sbwml/luci-app-mosdns/trunk package/mosdns
 
-# passwall2
+# Remove packages
+rm -rf feeds/luci/applications/luci-app-passwall
+rm -rf feeds/packages/net/haproxy
+rm -rf feeds/packages/net/v2ray-geodata
+
+# passwall
 # git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/passwall_package
 # git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
 # git clone -b packages --depth=1 https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
