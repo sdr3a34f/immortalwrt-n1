@@ -48,16 +48,9 @@ jobs:
     - name: Update & Install feeds
       working-directory: ./openwrt
       run: |
-        ./scripts/feeds clean
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         
-    - name: File Patch After
-      run: |
-        cd openwrt && ls
-        rm -rf ./feeds/packages/lang/golang
-        git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
-
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
