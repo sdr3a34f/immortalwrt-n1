@@ -4,7 +4,7 @@
 # sed -i 's/192.168.1.1/192.168.10.99/g' package/base-files/files/bin/config_generate
 
 # Firewall
-echo "iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE" >> package/network/config/firewall/files/firewall.user
+# echo "iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE" >> package/network/config/firewall/files/firewall.user
 
 # geodata
 # wget -q -cP files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
